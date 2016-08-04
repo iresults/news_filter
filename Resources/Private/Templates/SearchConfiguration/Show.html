@@ -4,7 +4,7 @@
 <f:section name="main">
     <f:flashMessages/>
 
-    <f:form action="show" method="post">
+    <f:form action="show" method="get">
         <f:render partial="FormFields/Text" section="main"
                   arguments="{
                   field: generalSearchKey,
@@ -18,9 +18,7 @@
         </f:for>
         --></f:comment>
 
-        <f:form.submit value="{f:translate(key:'tx_newsfilter_domain_model_searchconfiguration.search')}"
-                       class="btn btn-default"/>
+        <f:render partial="FormFields/Submit" section="main"/>
     </f:form>
-
 </f:section>
 </html>
