@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-08-04T13:59:13Z" product-name="news_filter">
+		<header/>
+		<body>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration">
+				<source>Search Configuration</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.fields">
+				<source>Fields</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,106 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    292,
+                    206
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "SearchConfiguration",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "173555471964"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "fields",
+                            "propertyType": "Text",
+                            "uid": "728432850663"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Extension to search for news",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "news_filter",
+        "name": "News-Filter",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "iresults gmbh",
+                "email": "tma@iresults.li",
+                "name": "Andreas Thurnheer-Meier",
+                "role": "Developer"
+            },
+            {
+                "company": "iresults gmbh",
+                "email": "cod@iresults.li",
+                "name": "Daniel Corn",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "newsfilter",
+                "name": "News Filter"
+            }
+        ],
+        "vendorName": "Iresults"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-08-04 01:59",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}
