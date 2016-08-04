@@ -1,0 +1,27 @@
+<phpunit
+        backupGlobals="true"
+        backupStaticAttributes="false"
+        bootstrap="UnitTestBootstrap.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertWarningsToExceptions="true"
+        forceCoversAnnotation="false"
+        processIsolation="false"
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        verbose="false"
+>
+    <testsuites>
+        <testsuite name="Controller tests">
+            <directory>Controller/</directory>
+        </testsuite>
+        <testsuite name="Domain tests">
+            <directory>Domain/</directory>
+        </testsuite>
+        <testsuite name="Service tests">
+            <directory>Service/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

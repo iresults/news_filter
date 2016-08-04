@@ -7,12 +7,16 @@ if (!defined('TYPO3_MODE')) {
 	'Iresults.' . $_EXTKEY,
 	'Newsfilter',
 	array(
-		'SearchConfiguration' => 'list',
-		
+		'SearchConfiguration' => 'show',
 	),
 	// non-cacheable actions
 	array(
-		'SearchConfiguration' => '',
-		
+		'SearchConfiguration' => 'show',
 	)
 );
+
+/**
+ * Hook for EXT:news
+ */
+$GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['Domain/Repository/AbstractDemandedRepository.php']['findDemanded'][$_EXTKEY]
+    = 'Iresults\\NewsFilter\\Hooks\\RepositoryHook->modify';

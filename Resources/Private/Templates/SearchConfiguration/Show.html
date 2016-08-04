@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <f:flashMessages/>
+
+    <f:form action="show" method="post">
+        <f:render partial="FormFields/Text" section="main"
+                  arguments="{
+                  field: generalSearchKey,
+                  value: generalSearchTerm,
+                  labelKey: 'tx_newsfilter_domain_model_searchconfiguration.search_for'
+                  }"/>
+
+        <f:comment><!--
+        <f:for each="{searchTerms}" key="field" as="value">
+            <f:render partial="FormFields/Text" section="main" arguments="{field:field, value:value}"/>
+        </f:for>
+        --></f:comment>
+
+        <f:form.submit value="{f:translate(key:'tx_newsfilter_domain_model_searchconfiguration.search')}"
+                       class="btn btn-default"/>
+    </f:form>
+
+</f:section>
+</html>

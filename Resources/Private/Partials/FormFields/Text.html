@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:section name="main">
+    <div class="form-group">
+        <label for="{field}">
+            <f:if condition="{label}">
+                <f:then>
+                    {label}
+                </f:then>
+                <f:else>
+                    <f:if condition="{labelKey}">
+                        <f:then>
+                            <f:translate key="{labelKey}"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate key="tx_newsfilter_domain_model_searchconfiguration.{field}"/>
+                        </f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </label>
+        <f:form.textfield class="form-control" id="{field}" name="{field}" value="{value}" />
+    </div>
+</f:section>
+</html>

@@ -27,6 +27,7 @@ namespace Iresults\NewsFilter\Domain\Model;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+use GeorgRinger\News\Domain\Model\News;
 
 /**
  * SearchConfiguration
@@ -40,26 +41,71 @@ class SearchConfiguration extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $fields = '';
-    
+
+    /**
+     * @var string[]
+     */
+    protected $fieldsArray;
+
+    /**
+     * Return the configuration with the default fields
+     *
+     * @return SearchConfiguration
+     */
+    public static function createDefaultConfiguration()
+    {
+        return new static(
+            [
+                'title',
+                'alternativeTitle',
+                'teaser',
+                'bodytext',
+                //'author',
+                //'authorEmail',
+                //'type',
+                //'keywords',
+                //'description',
+            ]
+        );
+    }
+
+    /**
+     * SearchConfiguration constructor.
+     *
+     * @param string[] $fields
+     */
+    public function __construct(array $fields = [])
+    {
+        $this->setFields($fields);
+    }
+
     /**
      * Returns the fields
      *
-     * @return string $fields
+     * @return string[] $fields
      */
     public function getFields()
     {
-        return $this->fields;
+        if (null === $this->fieldsArray) {
+            $this->fieldsArray = explode(',', $this->fields);
+        }
+
+        return $this->fieldsArray;
     }
-    
+
     /**
      * Sets the fields
      *
-     * @param string $fields
-     * @return void
+     * @param string[] $fields
+     * @return $this
      */
-    public function setFields($fields)
+    public function setFields(array $fields)
     {
-        $this->fields = $fields;
+        $fields = array_map('trim', $fields);
+        $this->fieldsArray = $fields;
+        $this->fields = implode(',', $fields);
+
+        return $this;
     }
 
 }
