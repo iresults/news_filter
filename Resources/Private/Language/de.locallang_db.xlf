@@ -1,35 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2016-08-04T13:59:13Z"
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-08-04T13:59:13Z"
           product-name="news_filter">
         <header/>
         <body>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration">
                 <source>Search Configuration</source>
+                <target>Such-Konfiguration</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.fields">
                 <source>Fields</source>
+                <target>Felder</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.title">
                 <source>Title</source>
+                <target>Titel</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.alternativeTitle">
                 <source>Alternative title</source>
+                <target>Alternativer Titel</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.teaser">
                 <source>Teaser</source>
+                <target>Teaser</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.bodytext">
                 <source>Content</source>
+                <target>Inhalt</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.search">
                 <source>Search</source>
+                <target>Suchen</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.send">
                 <source>Send</source>
+                <target>Absenden</target>
             </trans-unit>
             <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.search_for">
                 <source>Search for</source>
+                <target>Suchen nach</target>
+            </trans-unit>
+            <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.resultPid">
+                <source>Result page</source>
+                <target>Resultat Seite</target>
+            </trans-unit>
+            <trans-unit id="tx_newsfilter_domain_model_searchconfiguration.resultPid.description">
+                <source>Page to display the results</source>
+                <target>Seite auf der die Resultate angezeigt werden</target>
             </trans-unit>
         </body>
     </file>

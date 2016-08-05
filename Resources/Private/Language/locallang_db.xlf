@@ -9,6 +9,33 @@
 			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.fields">
 				<source>Fields</source>
 			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.alternativeTitle">
+				<source>Alternative title</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.teaser">
+				<source>Teaser</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.bodytext">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.send">
+				<source>Send</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.search_for">
+				<source>Search for</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.resultPid">
+				<source>Result page</source>
+			</trans-unit>
+			<trans-unit id="tx_newsfilter_domain_model_searchconfiguration.resultPid.description">
+				<source>Page to display the results</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

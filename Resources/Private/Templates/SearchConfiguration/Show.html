@@ -4,7 +4,7 @@
 <f:section name="main">
     <f:flashMessages/>
 
-    <f:form action="show" method="get">
+    <f:form action="show" method="get" pageUid="{settings.resultPid}">
         <f:render partial="FormFields/Text" section="main"
                   arguments="{
                   field: generalSearchKey,

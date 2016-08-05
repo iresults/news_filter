@@ -13,3 +13,10 @@ if (!defined('TYPO3_MODE')) {
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_newsfilter_domain_model_searchconfiguration', 'EXT:news_filter/Resources/Private/Language/locallang_csh_tx_newsfilter_domain_model_searchconfiguration.xlf');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_newsfilter_domain_model_searchconfiguration');
+
+$pluginSignature = str_replace('_', '', $_EXTKEY).'_'.'newsfilter';
+$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    $pluginSignature,
+    'FILE:EXT:'.$_EXTKEY.'/Configuration/FlexForms/news_filter.xml'
+);

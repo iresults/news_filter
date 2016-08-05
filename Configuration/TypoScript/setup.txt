@@ -22,4 +22,8 @@ plugin.tx_newsfilter_newsfilter {
     persistence {
         storagePid = {$plugin.tx_newsfilter_newsfilter.persistence.storagePid}
     }
+
+    settings {
+        resultPid= {$plugin.tx_newsfilter_newsfilter.settings.resultPid}
+    }
 }
